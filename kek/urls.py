@@ -20,6 +20,7 @@ from gay import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("",views.gayshouse),
-    path('log_in/',views.log_in,name='login')
+    path("",views.gayshouse,name='home'),
+    path('log_in/',views.log_in,name='login'),
+    path('sign_up/',views.sign_up,name='signup'),
 ]
